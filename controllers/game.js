@@ -6,6 +6,7 @@ const axios = require('axios');
 gameRouter.get('/', async (req, res) => {
 
     const apiUrl = 'https://www.freetogame.com/api/games';
+console.log(req);
 
     try {
         // Fetch 
@@ -16,6 +17,7 @@ gameRouter.get('/', async (req, res) => {
 
         const data = await response;
         console.log(data);
+        return res.json(data);
     // res.json(data);
 
     
