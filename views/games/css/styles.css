@@ -27,7 +27,7 @@ html {
   /** Globales**/
 
   body {
-   background: rgb(3, 3, 103);
+   background: rgb(27, 6, 59);
     font-size: 1.6rem;
    line-height: 1.5;
   }
@@ -113,6 +113,11 @@ font-size: 3.2rem;
    color: var(--secundario);
 }
 
+.enlace_juego {
+   color: rgb(56, 10, 109);
+  font-weight: bold;
+}
+
 /** Grid **/
 
 .grid {
@@ -133,12 +138,20 @@ font-size: 3.2rem;
 /** productos **/
 
 .producto {
-  background-color: #e100ffa4;
+  background: linear-gradient(to  bottom right, rgb(2, 2, 69), rgb(122, 10, 153));
   padding: 1rem;
+  height: 50rem;
+  border-radius: 5%;
 }
+
+
+/* .producto:hover{
+   transform: scale(1.1);
+} */
 
 .producto__nombre {
   font-size: 4rem;
+  color: white;
 }
 
 
@@ -156,6 +169,23 @@ font-size: 3.2rem;
      line-height: 1.2;
 }
 
+.producto__descripcion{
+   margin: 1rem 0;
+   text-align: center;
+   line-height: 1.2;
+}
+
+.enlace_juego {
+   margin: 1rem 0;
+   text-align: center;
+   line-height: 1.2;
+   color: white;
+}
+
+.enlace_juego:hover{
+   transform: scale(1.5);
+   
+}
 /** graficos **/
 
 .grafico {

@@ -78,6 +78,8 @@ const createNavTodos = () => {
                         </div>`;
 };
 
+
+
 if (window.location.pathname === "/") {
 	createNavHome();
 } else if (window.location.pathname === "/signup/") {
