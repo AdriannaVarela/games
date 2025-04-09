@@ -2,17 +2,20 @@
 
 const genreFilter = document.getElementById("genreFilter");
 const grid = document.querySelector('.grid');
-console.log(grid);
-(async () => {
-	try {
-		const {data} = await axios.get("/api/game");
-     console.log(data);
+const closeBtn = document.getElementById('close-btn');
+;
 
-	} catch (error) {
-		// window.location.pathname = "/login";
-		console.log(error);
-	}
-})();
+console.log(grid);
+// (async () => {
+// 	try {
+// 		const {data} = await axios.get("/api/game");
+//      console.log(data);
+
+// 	} catch (error) {
+// 		// window.location.pathname = "/login";
+// 		console.log(error);
+// 	}
+// })();
 
 const dataGames = [ 
 	
@@ -5303,7 +5306,7 @@ cardGame.innerHTML = `<div class="producto">
 					<div class="enlace_juego">
                              <a class="enlace_juego" href="${game.game_url}">Link del juego</a>
                       </div>
-					 
+                            <button class="agregar-fav" href="favoritos.html">Agregar a Favoritos</button>
                     </div>
                 </a>
             </div> `;
@@ -5313,9 +5316,21 @@ grid.append(cardGame);
 // Mostrar todos al principio
 mostrarJuegos(dataGames);
 
+
 // Filtro por género
 genreFilter.addEventListener("change", () => {
 	const selected = genreFilter.value;
 	const filtrados = selected === "all" ? dataGames : dataGames.filter(j => j.genre === selected);
 	mostrarJuegos(filtrados);
 });
+
+closeBtn.addEventListener("click", async (e) => {
+	console.log(e);
+	try {
+		await axios.get("/api/logout");
+		window.location.pathname = "/login";
+	} catch (error) {
+		console.log(error);
+	}
+});
+

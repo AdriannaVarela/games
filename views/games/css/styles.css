@@ -184,7 +184,12 @@ font-size: 3.2rem;
 
 .enlace_juego:hover{
    transform: scale(1.5);
-   
+}
+
+.btn-favorite {
+  padding: auto;
+  height: 30%;
+  width: 30%;
 }
 /** graficos **/
 
@@ -265,6 +270,12 @@ font-size: 3.2rem;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
+   }
+
+
+
+   .bloque__imagen{
+      border-radius: 10%;
    }
      
       @media (min-width:768px) {
