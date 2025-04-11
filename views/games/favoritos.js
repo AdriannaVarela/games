@@ -5347,6 +5347,7 @@ async function mostrarFavoritos() {
         <div class="enlace_juego">
           <a class="enlace_juego" href="${juego.game_url}" target="_blank">Jugar</a>
         </div>
+		
       </div>
     `;
     console.log("Tarjeta creada:", card);
@@ -5360,6 +5361,7 @@ window.addEventListener('DOMContentLoaded', () => {
   mostrarFavoritos();
   console.log("Función mostrarFavoritos llamada desde DOMContentLoaded.");
 });
+
 
 // 4. (Opcional) Código para el botón Cerrar Sesión
 const closeBtn = document.getElementById('close-btn');
