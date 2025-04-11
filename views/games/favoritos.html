@@ -1,35 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>favoritos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favoritos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
+  <nav class="navegacion">
+    <a class="navegacion__enlace" href="index.html">Games</a>
+    <a class="navegacion__enlace" href="nosotros.html">About us</a>
+    <a class="navegacion__enlace navegacion__enlace--activo" href="favoritos.html">Favoritos</a>
+    <button style="background: none; border: none;" id="close-btn" class="navegacion__enlace">Cerrar sesion</button>
+  </nav>
 
-    <nav class="navegacion">
-    
-        <a class="navegacion__enlace" href="index.html">Games</a>
-        <a class="navegacion__enlace" href="nosotros.html">About us</a>
-        <a class="navegacion__enlace navegacion__enlace--activo" href="favoritos.html">Favoritos</a>
-        <button style="background: none;
-      border: none;
-      margin: right;" id="close-btn" class="navegacion__enlace">Cerrar sesion</button>
-  
-      </nav>
-    
-      <main class="contenedor"> 
-        <h1>Favoritos</h1>
-        <div class="grid">       
+  <main class="contenedor">
+    <h1>🎮 Tus Juegos Favoritos</h1>
+  <div class="grid" id="favoritosGrid"></div>
+  </main>
 
-</div>
-        
-           <script src="favoritos.js"></script>
+  <script src="favoritos.js"></script>
+ 
 </body>
 </html>

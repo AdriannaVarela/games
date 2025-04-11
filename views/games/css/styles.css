@@ -140,7 +140,7 @@ font-size: 3.2rem;
 .producto {
   background: linear-gradient(to  bottom right, rgb(2, 2, 69), rgb(122, 10, 153));
   padding: 1rem;
-  height: 50rem;
+  height: 55rem;
   border-radius: 5%;
 }
 
@@ -186,11 +186,29 @@ font-size: 3.2rem;
    transform: scale(1.5);
 }
 
-.btn-favorite {
-  padding: auto;
-  height: 30%;
-  width: 30%;
-}
+.agregar-favorito {
+   display: inline-block;
+   background-color: #7f52e7;
+   color: white;
+   padding: 12px 24px;
+   border: none;
+   border-radius: 12px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+   transition: all 0.3s ease;
+   text-align: center;
+   margin: 20px auto;
+ }
+ 
+ .agregar-favorito:hover {
+   background-color: #5c3cc6;
+   transform: scale(1.05);
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+ }
+
+
 /** graficos **/
 
 .grafico {
